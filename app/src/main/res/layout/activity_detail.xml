@@ -11,45 +11,39 @@
         android:id="@+id/tvTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="11dp"
-        android:gravity="center"
+        android:layout_above="@+id/tvOverview"
+        android:layout_alignParentStart="true"
         android:text="Venom"
         android:textSize="30sp" />
 
     <TextView
         android:id="@+id/tvVenue"
-        android:layout_width="152dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/tvTime"
-        android:layout_marginEnd="23dp"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="97dp"
         android:text="Venue"
-        android:textSize="24sp"
-        android:gravity="center"
+        android:textSize="18sp"
         tools:text="TextView" />
 
     <TextView
         android:id="@+id/tvTime"
         android:layout_width="182dp"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/tvOrganizer"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="162dp"
-        android:gravity="center"
         android:text="TextView"
-        android:textSize="24sp"
-        tools:text="Time and Date" />
+        android:textSize="18sp"
+        tools:text=" Peak Season" />
 
     <TextView
         android:id="@+id/tvOverview"
         android:layout_width="match_parent"
-        android:layout_height="198dp"
+        android:layout_height="131dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="108dp"
-        android:gravity="center"
+        android:layout_marginBottom="213dp"
         android:text="TextView"
         android:textSize="18sp"
         tools:text="Follows Adonis Creed's life inside and outside of the ring as he deals with new found fame, issues with his family, and his continuing quest to become a champion." />
@@ -57,12 +51,31 @@
 
     <TextView
         android:id="@+id/tvOrganizer"
-        android:layout_width="328dp"
+        android:layout_width="40dp"
         android:layout_height="31dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="66dp"
-        android:gravity="center"
         android:text="Organizer"
         android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvPeakSeason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvVenue"
+        android:layout_marginTop="-97dp"
+        android:text="Peak Season:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="83dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvOverview"
+        android:layout_marginTop="-213dp"
+        android:text="Activities:"
+        android:textSize="18sp" />
+
 </RelativeLayout>
